@@ -1,12 +1,12 @@
-console.log('Giancarlo Ferrero')
+//console.log('Giancarlo Ferrero')
 
 const oddNumbers = []
-console.log(oddNumbers)
+//console.log(oddNumbers)
 
 //Utilizziamo un ciclo per chiedere all’utente un numero tramite prompt. 
 do {
     let number = parseInt(prompt('Inserisci un numero'));
-    console.log(number);
+    //console.log(number);
 
     let resto = number % 2;
     
@@ -17,7 +17,7 @@ do {
 
     //Se il numero è dispari,lo salviamo in una lista. 
     oddNumbers.push(number);
-    console.log(oddNumbers)
+    //console.log(oddNumbers)
 
 
 
@@ -28,3 +28,6 @@ do {
 
 //Una volta ottenuti tutti i 10 numeri, stampiamoli in console uno alla volta.
 
+for(let i = 0; i < oddNumbers.length; i++) {
+    console.log(oddNumbers[i]);
+}
