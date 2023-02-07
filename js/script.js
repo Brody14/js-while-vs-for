@@ -1,25 +1,23 @@
 //console.log('Giancarlo Ferrero')
 
 const oddNumbers = []
+let number
 //console.log(oddNumbers)
 
 //Utilizziamo un ciclo per chiedere all’utente un numero tramite prompt. 
 do {
-    let number = parseInt(prompt('Inserisci un numero'));
+    number = parseInt(prompt('Inserisci un numero'));
     //console.log(number);
 
     let resto = number % 2;
     
-    //Tutti gli altri valori li scartiamo (numeri pari ed eventuali NaN).
-    if(isNaN(number) || resto === 0) {
-        continue;
+    if(resto === 1) {
+        //Se il numero è dispari,lo salviamo in una lista. 
+        oddNumbers.push(number);
+        //console.log(oddNumbers)
+        
     }
-
-    //Se il numero è dispari,lo salviamo in una lista. 
-    oddNumbers.push(number);
-    //console.log(oddNumbers)
-
-
+    //Tutti gli altri valori li scartiamo (numeri pari ed eventuali NaN).
 
     //Continuiamo a chiedere un numero all’utente finchè non avremo ottenuto 10 numeri dispari.
 
